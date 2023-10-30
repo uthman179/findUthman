@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Background Toggle</title>
+    <script>
+        function toggle() {
+    var element = document.getElementById("toggleButton");
+    element.classList.toggle("black");
+    }
+
+    </script>
+    <style>
+        body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    }
+
+    .container {
+    text-align: center;
+    }
+
+    #toggleButton {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    }
+
+    #toggleButton.black {
+    background-color: black;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button id="toggleButton" onclick="toggle()">Toggle Background</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

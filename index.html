@@ -3,9 +3,333 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/4830131fa0.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;0,800;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="icon.jpg" type="image/x-icon" >
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Finduthman.com</title>
 </head>
 <body>
-    
+    <section id="home">
+        <div class="hero"></div>
+        <div class="name">
+            <h1>Hi, I'm Uthman Giwa <br>I'm a full-stack web developer</h1>
+            <button class="btn1"><a class="link1">View my work <i class="    fa-solid fa-arrow-right fa-beat"></i></a></button>
+        </div>
+        <button id="changeColorButton" class="change-bg"><i class="fa-solid fa-moon"></i></button>
+        <nav class="header">
+            <ul class="header-links">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="rec-header"></div>
+        <br><br><br>
+    </section>
+    <section id="about">
+        <h2>About</h2>
+        <div class="header-bar"></div>
+        <div class="list-about">
+            <nav class="about-info">
+                <div>
+                    <img src="5.jpg" alt="fast-icon" class="img2">
+                    <h4>Fast</h4>
+                    <p class="t1">Fast load times and lag free <br> interaction, my highest priority.</p>
+                </div>
+                <div>
+                    <img src="2.jpg" alt="fast-icon" class="img2">
+                    <h4>Responsive</h4>
+                    <p class="t1">My layouts will work on <br>any device, big or small.</p>
+                </div>
+                <div>
+                    <img src="4.jpg" alt="fast-icon" class="img2">
+                    <h4>Intuitive</h4>
+                    <p class="t1">Strong preference for easy to<br> use, intuitive UX/UI.</p>
+                </div>
+                <div>
+                    <img src="3.jpg" alt="fast-icon" class="img2">
+                    <h4>Dynamic</h4>
+                    <p class="t1">Websites don't have to be static,<br> I love making pages come to life.</p>
+                </div>
+            </nav>
+        </div>
+        <div class="picture">
+            <img src="pic-2.jpg" alt="picture" class="img3">
+            <h4 class="who">Who is this guy?</h4>
+            <p class="t2">
+                I'm a Front-End Developer for Lagos in Nigeria. <br>
+                I have serious passion for Graphics design,<br> animations and creating intuitive,
+                dynamic <br> user experiences.Let's make something special.
+            </p>
+        </div>
+        <div class="status-container">
+            <div class="status-bar">
+                <div class="status-text">CSS</div>
+                <div class="status-fill status-css"></div>
+                <div class="status-percent">90%</div>
+            </div>
+            <div class="status-bar">
+                <div class="status-text">HTML</div>
+                <div class="status-fill status-html"></div>
+                <div class="status-percent">90%</div>
+            </div>
+            <div class="status-bar">
+                <div class="status-text">React</div>
+                <div class="status-fill status-react"></div>
+                <div class="status-percent">80%</div>
+            </div>
+            <div class="status-bar">
+                <div class="status-text">JavaScript</div>
+                <div class="status-fill status-js"></div>
+                <div class="status-percent">80%</div>
+            </div>
+            <div class="status-bar">
+                <div class="status-text">Angular</div>
+                <div class="status-fill status-angular"></div>
+                <div class="status-percent">50%</div>
+            </div>
+            <div class="status-bar">
+                <div class="status-text">Node.js</div>
+                <div class="status-fill status-node"></div>
+                <div class="status-percent">65%</div>
+            </div>
+            <div class="status-bar">
+                <div class="status-text">Ruby/Rails</div>
+                <div class="status-fill status-ruby"></div>
+                <div class="status-percent">65%</div>
+            </div>
+            <div class="status-bar">
+                <div class="status-text">UI Design</div>
+                <div class="status-fill status-design"></div>
+                <div class="status-percent">50%</div>
+            </div>
+            <div class="status-bar">
+                <div class="status-text">Photoshop</div>
+                <div class="status-fill status-photoshop"></div>
+                <div class="status-percent">60%</div>
+            </div>
+            <div class="status-bar">
+                <div class="status-text">Sketch</div>
+                <div class="status-fill status-sketch"></div>
+                <div class="status-percent">50%</div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <section class="projects">
+        <div>
+            <br><br><br><br>
+            <h2 class="header-pro">PROJECTS</h2>
+            <div class="header-bar"></div>
+            <br><br><br><br>
+            <ul class="project-btn">
+                <li><button class="pro" onclick="showSquares(9)">ALL</button></li>
+                <li><button class="pro" onclick="showSquares(3)">RUBY/RAILS</button></li>
+                <li><button class="pro" onclick="showSquares(5)">REACT-JS</button></li>
+                <li><button class="pro" onclick="showSquares(4)">JAVASCRIPT</button></li>
+            </ul>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <img class="img4" src="7.jpg" alt="">
+                    <span class="close">&times;</span>
+                    <div class="more-content">
+                        <p class="t7"> ChowNow Ordering Web</p>
+                        <p class="t8">WHITE-LABEL ONLINE ORDERING SOLUTION.</p>
+                        <hr>
+                        <p class="t9">ChowNow is a commission-free online 
+                            ordering system and food ordering app helping 
+                            restaurants feed their hungry customers</p>
+                        <button class="btn3"><strong>View More</strong></button>
+                        
+                    </div>
+                </div>
+            </div>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <img class="img4" src="8.jpg" alt="">
+                    <span class="close">&times;</span>
+                    <div class="more-content">
+                        <p class="t7">ChowNow Discover</p>
+                        <p class="t8">FOOD ORDERING PLATFORM.</p>
+                        <hr>
+                        <p class="t9"> ChowNow Discover is a 
+                            platform that lets customers discover
+                            new local restaurants and provides business owners
+                            with tools to convert first time orders into lifelong diners.</p>
+                        <button class="btn3"><strong>View More</strong></button>
+                        
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="grid-container">
+                <div class="grid-item">
+                  <img src="6.jpg" alt="Image 1">
+                  <div class="hover-container">
+                    <p class="t5">ChowNow Ordering</p>
+                    <p class="t6">React JS / Python</p>
+                    <button id="myButton" class="btn2">Learn More</button>
+                  </div>
+                </div>
+                <div class="grid-item">
+                    <img src="6.1.jpg" alt="Image 1">
+                    <div class="hover-container">
+                      <p class="t5">ChowNow Discover</p>
+                      <p class="t6">React JS / Python</p>
+                      <button id="myButton2" class="btn2">Learn More</button>
+                    </div>
+                  </div>
+                  <div class="grid-item">
+                    <img src="6.2.jpg" alt="Image 1">
+                    <div class="hover-container">
+                      <p class="t5">New Relic</p>
+                      <p class="t6"> React / Ruby on Rails / AEM</p>
+                      <button id="myButton3" class="btn2">Learn More</button>
+                    </div>
+                  </div>
+                  <div class="grid-item">
+                    <img src="6.3.jpg" alt="Image 1">
+                    <div class="hover-container">
+                      <p class="t5">Roambi</p>
+                      <p class="t6">JavaScript</p>
+                      <button id="myButton4" class="btn2">Learn More</button>
+                    </div>
+                  </div>
+                  <div class="grid-item">
+                    <img src="6.4.jpg" alt="Image 1">
+                    <div class="hover-container">
+                      <p class="t5">Walker Tracker</p>
+                      <p class="t6">JS / Ruby on Rails</p>
+                      <button id="myButton5" class="btn2">Learn More</button>
+                    </div>
+                  </div>
+                  <div class="grid-item">
+                    <img src="6.5.jpg" alt="Image 1">
+                    <div class="hover-container">
+                      <p class="t5">MY STAND</p>
+                      <p class="t6">JS / Node.js on Sails</p>
+                      <button id="myButton6" class="btn2">Learn More</button>
+                    </div>
+                  </div>
+                  <div class="grid-item">
+                    <img src="6.6.jpg" alt="Image 1">
+                    <div class="hover-container">
+                      <p class="t5"> NEVER SURRENDER</p>
+                      <p class="t6">JavaScript</p>
+                      <button id="myButton7" class="btn2">Learn More</button>
+                    </div>
+                  </div>
+                  <div class="grid-item">
+                    <img src="6.7.jpg" alt="Image 1">
+                    <div class="hover-container">
+                      <p class="t5">Powur</p>
+                      <p class="t6">Angular / Ruby on Rails</p>
+                      <button id="myButton8"  class="btn2">Learn More</button>
+                    </div>
+                  </div>
+                  <div class="grid-item">
+                    <img src="6.8.jpg" alt="Image 1">
+                    <div class="hover-container">
+                      <p class="t5">The Mall</p>
+                      <p class="t6">React.js / Node</p>
+                      <button id="myButton9" class="btn2">Learn More</button>
+                    </div>
+                  </div>
+              </div>
+    </section>
+    <br><br><br><br>
+    <section class="blog-section">
+        <h2 class="header-pro">BLOG</h2>
+        <div class="header-bar"></div>
+        <div class="grid-container1">
+            <div class="grid-item1">
+                <img src="9.jpg" alt="Image 1">
+            </div>
+            <div class="grid-item1">
+                <img src="11.jpg" alt="Image 2">
+            </div>
+            <div class="grid-item1">
+                <img src="10.jpg" alt="Image 3">
+            </div>
+            <div class="grid-item1">
+                <img class="img6" src="12.jpg" alt="Image 4">
+            </div>
+        </div>
+        <div class="blog-info">
+            <div class="blog-1">
+                <br>
+                <h5>Breaking Your Coder's<br> Block</h5>
+                <br>
+                <p class="t3">APRIL 29,2016</p>
+                <div class="blog-bar"></div>
+                <p class="t4">At one time or another, as a <br>developer, we've all found <br>ourselves hopelessly stuck<br> on a coding issue....</p>
+            </div>
+            <div class="blog-2">
+                <h5>!Awake: This is Your <br> Brain on Caffeine</h5>
+                <br>
+                <p class="t3">APRIL 29, 2016</p>
+                <div class="blog-bar"></div>
+                <p class="t4">If there's one thing I can truly  <br>claim to be an expert on, it's<br> staying awake. For five years<br> I struggled to stay employed...</p>
+            </div>
+            <div class="blog-3">
+                <h5>Getting a Handle on <br>Handlebars</h5>
+                <br>
+                <p class="t3">MARCH 04, 2015</p>
+                <div class="blog-bar"></div>
+                <p class="t4">Here at EyeCue Lab we <br>render most of our data-laden <br>HTML pages in Handlebar <br>templates...</p>
+            </div>
+            <div class="blog-4">
+                <h5>5 Extensions for Your <br>Chrome Toolbelt</h5>
+                <br>
+                <p class="t3"> FEBRUARY 23, 2015</p>
+                <div class="blog-bar"></div>
+                <p class="t4">If you're not using Google <br>Chrome as a front-end web <br>developer, you're missing out.<br> Not only is Chrome the....</p>
+            </div>
+          </div>
+          
+    </section>
+    <br><br><br><br><br><br><br><br>
+    <section class="Contact-us">
+        <div class="contact-info">
+            <br><br>
+            <h2 class="con">CONTACT</h2>
+            <div class="con-bar"></div>
+            <br><br><br><br><br>
+            <form class="contact-form">
+                <label for="name">
+                    <input name="name" type="text" placeholder="Name">
+                </label>
+                <label for="email">
+                    <input name="email" type="email" placeholder="Enter email">
+                </label>
+                <textarea name="meassage" id="message" placeholder="Type Your Message ...."></textarea>
+                <input type="submit" value="SUBMIT">
+            </form>
+        </div>
+    </section>
+    <section class="footer-section">
+        <footer class="padding-920px">
+            <a href="#top" class="to-top"><i class="fas fa-angle-double-up"></i></a>
+            <div class="social-icons">
+                <a href="" class="icon"><i class="fab fa-github"></i></a>
+                <a href="" class="icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="" class="icon"><i class="fab fa-instagram"></i></a>
+                <a href="" class="icon"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p>GIWA UTHMAN.A. &copy; 2023</p>
+            <br>
+        </footer>
+    </section>
+
 </body>
 </html>
