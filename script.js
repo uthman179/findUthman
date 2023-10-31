@@ -1,15 +1,3 @@
-let toggleButton = document.getElementById("changeColorButton");
-let hero = document.querySelector(".hero");
-
-toggleButton.addEventListener("click", function() {
-  if (toggleButton.classList.contains("toggle")) {
-    toggleButton.classList.remove("toggle");
-    hero.classList.add("bg-change")
-  } else {
-    toggleButton.classList.add("toggle")
-    hero.classList.remove("bg-change")
-  }
-});
 
 var modal = document.getElementById('myModal');
 var btn = document.getElementById('myButton');

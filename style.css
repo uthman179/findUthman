@@ -3,9 +3,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    --main-bg-color: #00a1a7;
+}
 .hero{
-   background-color: #00a1a7;
+   background-color: var(--main-bg-color);
     height: 100vh;
+}
+.abs{
+    background-color: #3372c0;
 }
 h1{
     text-align: center;
@@ -155,47 +161,9 @@ h4{
     margin-left: -80px;
 }
 
-.status-css {
-    background-color: #00a1a7;
+.status-fill{
+    background-color: var(--main-bg-color);
 }
-
-.status-html {
-    background-color: #00a1a7;
-}
-
-.status-react {
-    background-color: #00a1a7; 
-   
-}
-
-.status-js {
-    background-color: #00a1a7;
-}
-
-.status-angular {
-    background-color: #00a1a7; 
-}
-
-.status-node {
-    background-color: #00a1a7;
-}
-
-.status-ruby {
-    background-color: #00a1a7;
-}
-
-.status-design {
-    background-color: #00a1a7;
-}
-
-.status-photoshop {
-    background-color: #00a1a7;
-}
-
-.status-sketch {
-    background-color: #00a1a7;
-}
-
 .status-percent {
     flex: 0 0 50px;
     text-align: right;
@@ -277,7 +245,7 @@ a .pro:hover{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #ffffff;
+    background-color: var(--main-bg-color);
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -298,7 +266,7 @@ a .pro:hover{
   .t6{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px; 
-    color: #e31b6d;
+    color: #ffffff;
   }
   .btn2{
     width: 150px;
@@ -306,13 +274,13 @@ a .pro:hover{
     margin-top: 50px;
     background-color: #ffffff;
     border-color:white ;
-    border: 2px solid #e31b6d;
+    border: 2px solid #ffffff;
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
     cursor: pointer;
   }
   .btn2:hover {
-    background-color: #e31b6d;
+    background-color: #00a1a7;
   }
   .modal {
     display: none;
@@ -436,7 +404,7 @@ h5{
     width: 50px;
     height: 3px;
   }
-  .blog-1{
+  /*.blog-1{
     margin-left: 130px;
   }
   .blog-2{
@@ -450,8 +418,13 @@ h5{
   .blog-4{
     margin-left: 1060px;
     margin-top: -155px;
+  }*/
+  .blog-info{
+    display: flex;
+    margin: 20px;
+    gap: 115px;
+    margin-left: 130px;
   }
-
 .Contact-us{
     background-color: #1b242f;
     height: 700px;

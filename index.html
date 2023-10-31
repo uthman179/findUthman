@@ -35,7 +35,7 @@
         <div class="rec-header"></div>
         <br><br><br>
     </section>
-    <section id="about">
+    <section id="about" class="abouts">
         <h2>About</h2>
         <div class="header-bar"></div>
         <div class="list-about">
@@ -266,29 +266,28 @@
             </div>
         </div>
         <div class="blog-info">
-            <div class="blog-1">
-                <br>
+            <div class="blog">
                 <h5>Breaking Your Coder's<br> Block</h5>
                 <br>
                 <p class="t3">APRIL 29,2016</p>
                 <div class="blog-bar"></div>
                 <p class="t4">At one time or another, as a <br>developer, we've all found <br>ourselves hopelessly stuck<br> on a coding issue....</p>
             </div>
-            <div class="blog-2">
+            <div class="blog">
                 <h5>!Awake: This is Your <br> Brain on Caffeine</h5>
                 <br>
                 <p class="t3">APRIL 29, 2016</p>
                 <div class="blog-bar"></div>
                 <p class="t4">If there's one thing I can truly  <br>claim to be an expert on, it's<br> staying awake. For five years<br> I struggled to stay employed...</p>
             </div>
-            <div class="blog-3">
+            <div class="blog">
                 <h5>Getting a Handle on <br>Handlebars</h5>
                 <br>
                 <p class="t3">MARCH 04, 2015</p>
                 <div class="blog-bar"></div>
                 <p class="t4">Here at EyeCue Lab we <br>render most of our data-laden <br>HTML pages in Handlebar <br>templates...</p>
             </div>
-            <div class="blog-4">
+            <div class="blog">
                 <h5>5 Extensions for Your <br>Chrome Toolbelt</h5>
                 <br>
                 <p class="t3"> FEBRUARY 23, 2015</p>
@@ -296,7 +295,7 @@
                 <p class="t4">If you're not using Google <br>Chrome as a front-end web <br>developer, you're missing out.<br> Not only is Chrome the....</p>
             </div>
           </div>
-          
+        </div>
     </section>
     <br><br><br><br><br><br><br><br>
     <section class="Contact-us">
@@ -305,9 +304,11 @@
             <h2 class="con">CONTACT</h2>
             <div class="con-bar"></div>
             <br><br><br><br><br>
-            <form class="contact-form">
+            <form class="contact-form" 
+            action="https://formspree.io/f/mbjvbraq"
+            method="POST">
                 <label for="name">
-                    <input name="name" type="text" placeholder="Name">
+                    <input name="name" type="text" placeholder="Name" required  autocomplete="">
                 </label>
                 <label for="email">
                     <input name="email" type="email" placeholder="Enter email">

@@ -237,3 +237,53 @@ h5{
       <br>
   </footer>
 </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let toggleButton = document.getElementById("changeColorButton");
+let hero = document.querySelector(".hero");
+let about = document.querySelector(".about");
+
+toggleButton.addEventListener("click", function() {
+  if (toggleButton.classList.contains("toggle")) {
+    toggleButton.classList.remove("toggle");
+    hero.classList.add("bg-change")
+  } else {
+    toggleButton.classList.add("toggle")
+    hero.classList.remove("bg-change")
+  }
+});
